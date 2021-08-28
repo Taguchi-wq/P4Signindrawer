@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SideMenuViewController.swift
 //  P4Signindrawer
 //
 //  Created by cmStudent on 2021/08/28.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SideMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print(#function)
     }
 
-
 }
-
