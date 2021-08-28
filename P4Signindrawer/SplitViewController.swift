@@ -1,5 +1,5 @@
 //
-//  SideMenuViewController.swift
+//  SplitViewController.swift
 //  P4Signindrawer
 //
 //  Created by cmStudent on 2021/08/28.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SideMenuViewController: UIViewController {
+class SplitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(#function)
     }
-
+    
 }
