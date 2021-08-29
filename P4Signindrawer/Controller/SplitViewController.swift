@@ -13,7 +13,7 @@ class SplitViewController: UISplitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(#function)
+        maximumPrimaryColumnWidth = 90
     }
     
 }
