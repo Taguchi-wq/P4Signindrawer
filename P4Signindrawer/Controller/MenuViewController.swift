@@ -106,7 +106,7 @@ class MenuViewController: UITableViewController {
         case .logo:
             return
         case .menu:
-            return
+            changeDetailView(menu: Menu.allCases[indexPath.row])
         case .logout:
             return
         case .minimize:
@@ -145,6 +145,13 @@ extension MenuViewController {
         }
         
         tableView.reloadData()
+    }
+    
+    private func changeDetailView(menu: Menu) {
+        guard let splitViewController = splitViewController else { return }
+        guard let infomationVC = storyboard?.instantiateViewController(withIdentifier: InfomationViewController.reuseIdentifier) as? InfomationViewController else { return }
+        infomationVC.initialize(menu: menu)
+        splitViewController.showDetailViewController(infomationVC, sender: nil)
     }
     
 }
