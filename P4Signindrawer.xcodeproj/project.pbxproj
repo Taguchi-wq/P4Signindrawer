@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F10AE9226DD31410031EEA6 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10AE9126DD31410031EEA6 /* SignIn.storyboard */; };
+		7F10AE9426DD31630031EEA6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9326DD31630031EEA6 /* SignInViewController.swift */; };
+		7F10AE9826DD385C0031EEA6 /* UISplitViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9726DD385C0031EEA6 /* UISplitViewController+Extension.swift */; };
+		7F10AE9A26DD388C0031EEA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9926DD388C0031EEA6 /* UITextField+Extension.swift */; };
+		7F10AE9E26DD39CA0031EEA6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9D26DD39CA0031EEA6 /* UIButton+Extension.swift */; };
+		7F10AEA026DD3B9E0031EEA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9F26DD3B9E0031EEA6 /* Color.swift */; };
 		7F16F49226DA471C000BF5AA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F49126DA471C000BF5AA /* MenuViewController.swift */; };
 		7F16F49F26DB77C2000BF5AA /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F49D26DB77C2000BF5AA /* LogoCell.swift */; };
 		7F16F4A026DB77C2000BF5AA /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F16F49E26DB77C2000BF5AA /* LogoCell.xib */; };
@@ -15,7 +21,6 @@
 		7F16F4A726DB7907000BF5AA /* MinimizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4A526DB7907000BF5AA /* MinimizeCell.swift */; };
 		7F16F4A826DB7907000BF5AA /* MinimizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F16F4A626DB7907000BF5AA /* MinimizeCell.xib */; };
 		7F16F4AB26DB7A8E000BF5AA /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4AA26DB7A8E000BF5AA /* Reusable.swift */; };
-		7F16F4AD26DB87ED000BF5AA /* UISplitViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4AC26DB87ED000BF5AA /* UISplitViewController+Extention.swift */; };
 		7F16F4B126DB8B24000BF5AA /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B026DB8B24000BF5AA /* Menu.swift */; };
 		7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B226DBC30C000BF5AA /* Minimize.swift */; };
 		7F16F4B526DBD88C000BF5AA /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B426DBD88C000BF5AA /* Logo.swift */; };
@@ -28,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F10AE9126DD31410031EEA6 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		7F10AE9326DD31630031EEA6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7F10AE9726DD385C0031EEA6 /* UISplitViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extension.swift"; sourceTree = "<group>"; };
+		7F10AE9926DD388C0031EEA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		7F10AE9D26DD39CA0031EEA6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		7F10AE9F26DD3B9E0031EEA6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		7F16F49126DA471C000BF5AA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7F16F49D26DB77C2000BF5AA /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
 		7F16F49E26DB77C2000BF5AA /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
@@ -36,7 +47,6 @@
 		7F16F4A526DB7907000BF5AA /* MinimizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeCell.swift; sourceTree = "<group>"; };
 		7F16F4A626DB7907000BF5AA /* MinimizeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinimizeCell.xib; sourceTree = "<group>"; };
 		7F16F4AA26DB7A8E000BF5AA /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		7F16F4AC26DB87ED000BF5AA /* UISplitViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extention.swift"; sourceTree = "<group>"; };
 		7F16F4B026DB8B24000BF5AA /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7F16F4B226DBC30C000BF5AA /* Minimize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimize.swift; sourceTree = "<group>"; };
 		7F16F4B426DBD88C000BF5AA /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
@@ -82,12 +92,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		7F16F4AE26DB87F3000BF5AA /* Extention */ = {
+		7F16F4AE26DB87F3000BF5AA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7F16F4AC26DB87ED000BF5AA /* UISplitViewController+Extention.swift */,
+				7F10AE9726DD385C0031EEA6 /* UISplitViewController+Extension.swift */,
+				7F10AE9926DD388C0031EEA6 /* UITextField+Extension.swift */,
+				7F10AE9D26DD39CA0031EEA6 /* UIButton+Extension.swift */,
 			);
-			path = Extention;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7F16F4AF26DB8B11000BF5AA /* Model */ = {
@@ -96,6 +108,7 @@
 				7F16F4B026DB8B24000BF5AA /* Menu.swift */,
 				7F16F4B226DBC30C000BF5AA /* Minimize.swift */,
 				7F16F4B426DBD88C000BF5AA /* Logo.swift */,
+				7F10AE9F26DD3B9E0031EEA6 /* Color.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,7 +137,7 @@
 				7F97093D26DA436D004F04B4 /* View */,
 				7F97093E26DA437B004F04B4 /* Controller */,
 				7F16F4A926DB7A7D000BF5AA /* Protocol */,
-				7F16F4AE26DB87F3000BF5AA /* Extention */,
+				7F16F4AE26DB87F3000BF5AA /* Extension */,
 				7F97092726DA2EB2004F04B4 /* Assets.xcassets */,
 				7F97092C26DA2EB2004F04B4 /* Info.plist */,
 			);
@@ -151,6 +164,7 @@
 		7F97093E26DA437B004F04B4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7F10AE9326DD31630031EEA6 /* SignInViewController.swift */,
 				7F97093A26DA393F004F04B4 /* SplitViewController.swift */,
 				7F16F49126DA471C000BF5AA /* MenuViewController.swift */,
 				7F16F4B626DBE438000BF5AA /* InfomationViewController.swift */,
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				7F97092926DA2EB2004F04B4 /* LaunchScreen.storyboard */,
+				7F10AE9126DD31410031EEA6 /* SignIn.storyboard */,
 				7F97093826DA3797004F04B4 /* Split.storyboard */,
 			);
 			path = Storyboard;
@@ -230,6 +245,7 @@
 				7F16F4A426DB7884000BF5AA /* MenuCell.xib in Resources */,
 				7F16F4A026DB77C2000BF5AA /* LogoCell.xib in Resources */,
 				7F97092826DA2EB2004F04B4 /* Assets.xcassets in Resources */,
+				7F10AE9226DD31410031EEA6 /* SignIn.storyboard in Resources */,
 				7F16F4A826DB7907000BF5AA /* MinimizeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,14 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F10AE9826DD385C0031EEA6 /* UISplitViewController+Extension.swift in Sources */,
 				7F16F4B726DBE438000BF5AA /* InfomationViewController.swift in Sources */,
 				7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */,
 				7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */,
 				7F16F4A726DB7907000BF5AA /* MinimizeCell.swift in Sources */,
-				7F16F4AD26DB87ED000BF5AA /* UISplitViewController+Extention.swift in Sources */,
+				7F10AEA026DD3B9E0031EEA6 /* Color.swift in Sources */,
+				7F10AE9426DD31630031EEA6 /* SignInViewController.swift in Sources */,
 				7F16F4B526DBD88C000BF5AA /* Logo.swift in Sources */,
 				7F16F4A326DB7884000BF5AA /* MenuCell.swift in Sources */,
+				7F10AE9E26DD39CA0031EEA6 /* UIButton+Extension.swift in Sources */,
 				7F97093B26DA393F004F04B4 /* SplitViewController.swift in Sources */,
+				7F10AE9A26DD388C0031EEA6 /* UITextField+Extension.swift in Sources */,
 				7F16F49F26DB77C2000BF5AA /* LogoCell.swift in Sources */,
 				7F16F4B126DB8B24000BF5AA /* Menu.swift in Sources */,
 				7F16F49226DA471C000BF5AA /* MenuViewController.swift in Sources */,

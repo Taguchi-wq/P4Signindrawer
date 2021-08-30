@@ -1,8 +1,8 @@
 //
-//  UISplitViewController+Extention.swift
+//  UISplitViewController+Extension.swift
 //  P4Signindrawer
 //
-//  Created by cmStudent on 2021/08/29.
+//  Created by cmStudent on 2021/08/31.
 //  Copyright © 2021 cmStudent. All rights reserved.
 //
 
