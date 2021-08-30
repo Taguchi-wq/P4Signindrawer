@@ -9,20 +9,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Infomation View Controller-->
         <scene sceneID="vgz-5o-Vwp">
             <objects>
-                <viewController id="39M-hc-2o3" sceneMemberID="viewController">
+                <viewController id="39M-hc-2o3" customClass="InfomationViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9N8-mf-bAe">
                         <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IGb-sN-0Eb">
+                                <rect key="frame" x="10" y="40" width="683.5" height="708"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vw8-Ja-be7">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="708"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登録情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-a1-z5e">
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="G40-Zg-hmc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.52941176469999995" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:  20cm01**@jec.ac.jp  Name: 電子太郎  Phone: 03-****-****" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbv-cu-Ruc">
+                                                <rect key="frame" x="0.0" y="40" width="337" height="668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-N2-FaR">
+                                        <rect key="frame" x="347" y="0.0" width="336.5" height="708"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホームページ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVp-XL-klk">
+                                                <rect key="frame" x="0.0" y="0.0" width="336.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HjJ-ho-eNg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.52941176469999995" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-PY-keS">
+                                                <rect key="frame" x="0.0" y="48" width="336.5" height="660"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Kl-yt-DCW" firstAttribute="bottom" secondItem="IGb-sN-0Eb" secondAttribute="bottom" constant="20" id="3q8-ns-VK8"/>
+                            <constraint firstItem="IGb-sN-0Eb" firstAttribute="top" secondItem="3Kl-yt-DCW" secondAttribute="top" constant="20" id="4j8-59-G6A"/>
+                            <constraint firstItem="IGb-sN-0Eb" firstAttribute="leading" secondItem="3Kl-yt-DCW" secondAttribute="leading" constant="10" id="d6L-Yb-Bce"/>
+                            <constraint firstItem="3Kl-yt-DCW" firstAttribute="trailing" secondItem="IGb-sN-0Eb" secondAttribute="trailing" constant="10" id="gvp-Y1-mtX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Kl-yt-DCW"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="rmd-PY-keS" id="KVu-tN-1wA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1O-6i-oe6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="173"/>
+            <point key="canvasLocation" x="150.5859375" y="172.65625"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="cM6-Q9-0rI">
