@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3DECDBEAC0B7CC539D0855 /* Pods_P4Signindrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688D53A20DAD9391C3F492B2 /* Pods_P4Signindrawer.framework */; };
 		7F10AE9226DD31410031EEA6 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10AE9126DD31410031EEA6 /* SignIn.storyboard */; };
 		7F10AE9426DD31630031EEA6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9326DD31630031EEA6 /* SignInViewController.swift */; };
 		7F10AE9826DD385C0031EEA6 /* UISplitViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9726DD385C0031EEA6 /* UISplitViewController+Extension.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133450ED4AF04EB82E981089 /* Pods-P4Signindrawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P4Signindrawer.release.xcconfig"; path = "Target Support Files/Pods-P4Signindrawer/Pods-P4Signindrawer.release.xcconfig"; sourceTree = "<group>"; };
+		688D53A20DAD9391C3F492B2 /* Pods_P4Signindrawer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P4Signindrawer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F10AE9126DD31410031EEA6 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		7F10AE9326DD31630031EEA6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7F10AE9726DD385C0031EEA6 /* UISplitViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		7F97092C26DA2EB2004F04B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F97093826DA3797004F04B4 /* Split.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Split.storyboard; sourceTree = "<group>"; };
 		7F97093A26DA393F004F04B4 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		C4DC5E1E3350E8F102223AEC /* Pods-P4Signindrawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P4Signindrawer.debug.xcconfig"; path = "Target Support Files/Pods-P4Signindrawer/Pods-P4Signindrawer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3DECDBEAC0B7CC539D0855 /* Pods_P4Signindrawer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D90A03C001F6041F6C6AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688D53A20DAD9391C3F492B2 /* Pods_P4Signindrawer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F16F49C26DB779C000BF5AA /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,8 @@
 			children = (
 				7F97091F26DA2EB1004F04B4 /* P4Signindrawer */,
 				7F97091E26DA2EB1004F04B4 /* Products */,
+				824860F6B9DCB33CDB29D6AC /* Pods */,
+				5D90A03C001F6041F6C6AA05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +203,16 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		824860F6B9DCB33CDB29D6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC5E1E3350E8F102223AEC /* Pods-P4Signindrawer.debug.xcconfig */,
+				133450ED4AF04EB82E981089 /* Pods-P4Signindrawer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F97092F26DA2EB2004F04B4 /* Build configuration list for PBXNativeTarget "P4Signindrawer" */;
 			buildPhases = (
+				FB683A92D5AA2A25A4EF19BD /* [CP] Check Pods Manifest.lock */,
 				7F97091926DA2EB1004F04B4 /* Sources */,
 				7F97091A26DA2EB1004F04B4 /* Frameworks */,
 				7F97091B26DA2EB1004F04B4 /* Resources */,
+				8A944A8005DAFF45F6BE6227 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +285,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A944A8005DAFF45F6BE6227 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-P4Signindrawer/Pods-P4Signindrawer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-P4Signindrawer/Pods-P4Signindrawer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-P4Signindrawer/Pods-P4Signindrawer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB683A92D5AA2A25A4EF19BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P4Signindrawer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F97091926DA2EB1004F04B4 /* Sources */ = {
@@ -416,6 +485,7 @@
 		};
 		7F97093026DA2EB2004F04B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DC5E1E3350E8F102223AEC /* Pods-P4Signindrawer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,6 +504,7 @@
 		};
 		7F97093126DA2EB2004F04B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133450ED4AF04EB82E981089 /* Pods-P4Signindrawer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

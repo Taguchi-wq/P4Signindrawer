@@ -56,6 +56,14 @@ class SignUpViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction private func tappedSignUpButton(_ sender: UIButton) {
+        print(#function)
+    }
+    
+    @IBAction private func tappedSignInButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }
 
 
