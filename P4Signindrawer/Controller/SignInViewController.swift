@@ -35,6 +35,10 @@ class SignInViewController: UIViewController {
         textField.addBottomBorder()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     
     @IBAction private func tappedSignInButton(_ sender: UIButton) {
         print(#function)
@@ -46,6 +50,7 @@ class SignInViewController: UIViewController {
     
 }
 
+
 extension SignInViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -54,6 +59,11 @@ extension SignInViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.addBottomBorder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }
