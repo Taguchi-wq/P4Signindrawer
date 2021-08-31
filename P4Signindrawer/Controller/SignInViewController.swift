@@ -20,12 +20,19 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        emailTextField.addBottomBorder()
-        passwordTextField.addBottomBorder()
+        setupTextField(emailTextField)
+        setupTextField(passwordTextField)
+        
         signInButton.roundCorners(30)
         signInWithAppleButton.roundCorners(30)
         signUpButton.roundCorners(30)
         signUpButton.addBorder()
+    }
+    
+    
+    private func setupTextField(_ textField: UITextField) {
+        textField.delegate = self
+        textField.addBottomBorder()
     }
     
     
@@ -35,6 +42,18 @@ class SignInViewController: UIViewController {
     
     @IBAction private func tappedSignUpButton(_ sender: UIButton) {
         print(#function)
+    }
+    
+}
+
+extension SignInViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.addBottomBorder(color: Color.jec)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.addBottomBorder()
     }
     
 }

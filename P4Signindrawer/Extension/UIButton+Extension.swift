@@ -14,9 +14,9 @@ extension UIButton {
         layer.cornerRadius = cornerRadius
     }
     
-    func addBorder(color: UIColor = Color.jec) {
+    func addBorder(width: CGFloat = 3, color: UIColor = Color.jec) {
         layer.borderColor = color.cgColor
-        layer.borderWidth = 3
+        layer.borderWidth = width
     }
     
 }
