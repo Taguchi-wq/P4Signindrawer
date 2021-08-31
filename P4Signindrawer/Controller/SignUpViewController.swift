@@ -26,16 +26,12 @@ class SignUpViewController: UIViewController {
         signUpButtom.roundCorners(30)
         signInButton.addBorder()
         signInButton.roundCorners(30)
-        
         setupTextField(emailTextField)
         setupTextField(nameTextField)
         setupTextField(phoneTextField)
         setupTextField(passwordTextField)
         setupTextField(repeatPasswordTextField)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
+        setupNotification()
     }
     
     
@@ -44,12 +40,53 @@ class SignUpViewController: UIViewController {
         textField.addBottomBorder()
     }
     
+    private func setupNotification() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
     
     @IBAction private func tappedCloseButton(_ sender: UIButton) {
         dismiss(animated: true)
     }
     
 }
+
+
+// キーボード周りの処理
+extension SignUpViewController {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    @objc
+    private func keyboardWillShow(_ notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            } else {
+                let suggestionHeight = self.view.frame.origin.y + keyboardSize.height
+                self.view.frame.origin.y -= suggestionHeight
+            }
+        }
+    }
+    
+    @objc
+    private func keyboardWillHide() {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+}
+
 
 
 extension SignUpViewController: UITextFieldDelegate {

@@ -22,11 +22,11 @@ class SignInViewController: UIViewController {
     
         setupTextField(emailTextField)
         setupTextField(passwordTextField)
-        
         signInButton.roundCorners(30)
         signInWithAppleButton.roundCorners(30)
         signUpButton.roundCorners(30)
         signUpButton.addBorder()
+        setupNotification()
     }
     
     
@@ -35,8 +35,15 @@ class SignInViewController: UIViewController {
         textField.addBottomBorder()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
+    private func setupNotification() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
     }
     
     
@@ -47,6 +54,35 @@ class SignInViewController: UIViewController {
     @IBAction private func tappedSignUpButton(_ sender: UIButton) {
         guard let signUpVC = storyboard?.instantiateViewController(withIdentifier: SignUpViewController.reuseIdentifier) as? SignUpViewController else { return }
         present(signUpVC, animated: true)
+    }
+    
+}
+
+
+// キーボード周りの処理
+extension SignInViewController {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    @objc
+    private func keyboardWillShow(_ notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 100
+            } else {
+                let suggestionHeight = self.view.frame.origin.y + keyboardSize.height
+                self.view.frame.origin.y -= suggestionHeight
+            }
+        }
+    }
+    
+    @objc
+    private func keyboardWillHide() {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
 }
