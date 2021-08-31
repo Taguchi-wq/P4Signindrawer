@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  P4Signindrawer
 //
 //  Created by cmStudent on 2021/08/31.
@@ -8,25 +8,34 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var phoneTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var repeatPasswordTextField: UITextField!
+    @IBOutlet private weak var signUpButtom: UIButton!
     @IBOutlet private weak var signInButton: UIButton!
-    @IBOutlet private weak var signInWithAppleButton: UIButton!
-    @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var closeButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        setupTextField(emailTextField)
-        setupTextField(passwordTextField)
         
+        signUpButtom.roundCorners(30)
+        signInButton.addBorder()
         signInButton.roundCorners(30)
-        signInWithAppleButton.roundCorners(30)
-        signUpButton.roundCorners(30)
-        signUpButton.addBorder()
+        
+        setupTextField(emailTextField)
+        setupTextField(nameTextField)
+        setupTextField(phoneTextField)
+        setupTextField(passwordTextField)
+        setupTextField(repeatPasswordTextField)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     
@@ -35,24 +44,15 @@ class SignInViewController: UIViewController {
         textField.addBottomBorder()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
     
-    
-    @IBAction private func tappedSignInButton(_ sender: UIButton) {
-        print(#function)
-    }
-    
-    @IBAction private func tappedSignUpButton(_ sender: UIButton) {
-        guard let signUpVC = storyboard?.instantiateViewController(withIdentifier: SignUpViewController.reuseIdentifier) as? SignUpViewController else { return }
-        present(signUpVC, animated: true)
+    @IBAction private func tappedCloseButton(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
 }
 
 
-extension SignInViewController: UITextFieldDelegate {
+extension SignUpViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.addBottomBorder(color: Color.jec)

@@ -104,11 +104,20 @@
                         <outlet property="signInButton" destination="wov-GI-4Ga" id="jJL-wt-r5Q"/>
                         <outlet property="signInWithAppleButton" destination="MC8-7Y-dx6" id="zkA-1E-ub2"/>
                         <outlet property="signUpButton" destination="03P-5s-CWh" id="lJO-vb-CBS"/>
+                        <segue destination="K0j-B8-PBL" kind="show" id="6xF-UJ-oWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWx-32-i9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-166.40625" y="126.5625"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="PRF-Jy-FnI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SignUpViewController" storyboardName="SignUp" id="K0j-B8-PBL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3G-7c-Mck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="127"/>
         </scene>
     </scenes>
     <resources>

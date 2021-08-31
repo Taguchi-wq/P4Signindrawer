@@ -13,6 +13,8 @@
 		7F10AE9A26DD388C0031EEA6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9926DD388C0031EEA6 /* UITextField+Extension.swift */; };
 		7F10AE9E26DD39CA0031EEA6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9D26DD39CA0031EEA6 /* UIButton+Extension.swift */; };
 		7F10AEA026DD3B9E0031EEA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AE9F26DD3B9E0031EEA6 /* Color.swift */; };
+		7F10AEA226DE171A0031EEA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10AEA126DE171A0031EEA6 /* SignUpViewController.swift */; };
+		7F10AEA426DE17340031EEA6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10AEA326DE17340031EEA6 /* SignUp.storyboard */; };
 		7F16F49226DA471C000BF5AA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F49126DA471C000BF5AA /* MenuViewController.swift */; };
 		7F16F49F26DB77C2000BF5AA /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F49D26DB77C2000BF5AA /* LogoCell.swift */; };
 		7F16F4A026DB77C2000BF5AA /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F16F49E26DB77C2000BF5AA /* LogoCell.xib */; };
@@ -39,6 +41,8 @@
 		7F10AE9926DD388C0031EEA6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		7F10AE9D26DD39CA0031EEA6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		7F10AE9F26DD3B9E0031EEA6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F10AEA126DE171A0031EEA6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7F10AEA326DE17340031EEA6 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		7F16F49126DA471C000BF5AA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7F16F49D26DB77C2000BF5AA /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
 		7F16F49E26DB77C2000BF5AA /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7F10AE9326DD31630031EEA6 /* SignInViewController.swift */,
+				7F10AEA126DE171A0031EEA6 /* SignUpViewController.swift */,
 				7F97093A26DA393F004F04B4 /* SplitViewController.swift */,
 				7F16F49126DA471C000BF5AA /* MenuViewController.swift */,
 				7F16F4B626DBE438000BF5AA /* InfomationViewController.swift */,
@@ -177,6 +182,7 @@
 			children = (
 				7F97092926DA2EB2004F04B4 /* LaunchScreen.storyboard */,
 				7F10AE9126DD31410031EEA6 /* SignIn.storyboard */,
+				7F10AEA326DE17340031EEA6 /* SignUp.storyboard */,
 				7F97093826DA3797004F04B4 /* Split.storyboard */,
 			);
 			path = Storyboard;
@@ -246,6 +252,7 @@
 				7F16F4A026DB77C2000BF5AA /* LogoCell.xib in Resources */,
 				7F97092826DA2EB2004F04B4 /* Assets.xcassets in Resources */,
 				7F10AE9226DD31410031EEA6 /* SignIn.storyboard in Resources */,
+				7F10AEA426DE17340031EEA6 /* SignUp.storyboard in Resources */,
 				7F16F4A826DB7907000BF5AA /* MinimizeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +269,7 @@
 				7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */,
 				7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */,
 				7F16F4A726DB7907000BF5AA /* MinimizeCell.swift in Sources */,
+				7F10AEA226DE171A0031EEA6 /* SignUpViewController.swift in Sources */,
 				7F10AEA026DD3B9E0031EEA6 /* Color.swift in Sources */,
 				7F10AE9426DD31630031EEA6 /* SignInViewController.swift in Sources */,
 				7F16F4B526DBD88C000BF5AA /* Logo.swift in Sources */,
