@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,11 @@
 		7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B226DBC30C000BF5AA /* Minimize.swift */; };
 		7F16F4B526DBD88C000BF5AA /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B426DBD88C000BF5AA /* Logo.swift */; };
 		7F16F4B726DBE438000BF5AA /* InfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16F4B626DBE438000BF5AA /* InfomationViewController.swift */; };
+		7F5A443C26DE3B0D00BE7BD3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A443B26DE3B0D00BE7BD3 /* RealmManager.swift */; };
+		7F5A444126DE411900BE7BD3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444026DE411900BE7BD3 /* User.swift */; };
+		7F5A444326DF7AEF00BE7BD3 /* PhoneUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */; };
+		7F5A444626DF831B00BE7BD3 /* EmailUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */; };
+		7F5A444826DF893100BE7BD3 /* PasswordUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */; };
 		7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97092026DA2EB1004F04B4 /* AppDelegate.swift */; };
 		7F97092826DA2EB2004F04B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F97092726DA2EB2004F04B4 /* Assets.xcassets */; };
 		7F97092B26DA2EB2004F04B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F97092926DA2EB2004F04B4 /* LaunchScreen.storyboard */; };
@@ -58,6 +63,11 @@
 		7F16F4B226DBC30C000BF5AA /* Minimize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimize.swift; sourceTree = "<group>"; };
 		7F16F4B426DBD88C000BF5AA /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		7F16F4B626DBE438000BF5AA /* InfomationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomationViewController.swift; sourceTree = "<group>"; };
+		7F5A443B26DE3B0D00BE7BD3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		7F5A444026DE411900BE7BD3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUtil.swift; sourceTree = "<group>"; };
+		7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtil.swift; sourceTree = "<group>"; };
+		7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUtil.swift; sourceTree = "<group>"; };
 		7F97091D26DA2EB1004F04B4 /* P4Signindrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P4Signindrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F97092026DA2EB1004F04B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F97092726DA2EB2004F04B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,12 +132,49 @@
 		7F16F4AF26DB8B11000BF5AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F5A444426DF7AF400BE7BD3 /* Logic */,
+				7F5A443F26DE40A600BE7BD3 /* Entity */,
+				7F5A443E26DE409100BE7BD3 /* Manager */,
+				7F5A443D26DE407C00BE7BD3 /* Resources */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F5A443D26DE407C00BE7BD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7F16F4B026DB8B24000BF5AA /* Menu.swift */,
 				7F16F4B226DBC30C000BF5AA /* Minimize.swift */,
 				7F16F4B426DBD88C000BF5AA /* Logo.swift */,
 				7F10AE9F26DD3B9E0031EEA6 /* Color.swift */,
 			);
-			path = Model;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F5A443E26DE409100BE7BD3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A443B26DE3B0D00BE7BD3 /* RealmManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7F5A443F26DE40A600BE7BD3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A444026DE411900BE7BD3 /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7F5A444426DF7AF400BE7BD3 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */,
+				7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */,
+				7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		7F97091426DA2EB1004F04B4 = {
@@ -209,7 +256,6 @@
 				C4DC5E1E3350E8F102223AEC /* Pods-P4Signindrawer.debug.xcconfig */,
 				133450ED4AF04EB82E981089 /* Pods-P4Signindrawer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -338,6 +384,7 @@
 				7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */,
 				7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */,
 				7F16F4A726DB7907000BF5AA /* MinimizeCell.swift in Sources */,
+				7F5A443C26DE3B0D00BE7BD3 /* RealmManager.swift in Sources */,
 				7F10AEA226DE171A0031EEA6 /* SignUpViewController.swift in Sources */,
 				7F10AEA026DD3B9E0031EEA6 /* Color.swift in Sources */,
 				7F10AE9426DD31630031EEA6 /* SignInViewController.swift in Sources */,
@@ -346,10 +393,14 @@
 				7F10AE9E26DD39CA0031EEA6 /* UIButton+Extension.swift in Sources */,
 				7F97093B26DA393F004F04B4 /* SplitViewController.swift in Sources */,
 				7F10AE9A26DD388C0031EEA6 /* UITextField+Extension.swift in Sources */,
+				7F5A444826DF893100BE7BD3 /* PasswordUtil.swift in Sources */,
+				7F5A444326DF7AEF00BE7BD3 /* PhoneUtil.swift in Sources */,
 				7F16F49F26DB77C2000BF5AA /* LogoCell.swift in Sources */,
 				7F16F4B126DB8B24000BF5AA /* Menu.swift in Sources */,
 				7F16F49226DA471C000BF5AA /* MenuViewController.swift in Sources */,
 				7F16F4AB26DB7A8E000BF5AA /* Reusable.swift in Sources */,
+				7F5A444126DE411900BE7BD3 /* User.swift in Sources */,
+				7F5A444626DF831B00BE7BD3 /* EmailUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
