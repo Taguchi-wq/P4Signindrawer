@@ -156,7 +156,7 @@ extension MenuViewController {
     
     private func logout() {
         Alert.presentLogOut(on: self) { _ in
-            self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+            self.presentingViewController?.dismiss(animated: true)
         }
     }
     

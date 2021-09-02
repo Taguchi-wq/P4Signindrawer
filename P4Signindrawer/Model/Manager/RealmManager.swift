@@ -31,6 +31,12 @@ class RealmManager {
         return realm.objects(object)
     }
     
+    func loadUser(email: String, password: String) -> User? {
+        let user = realm.objects(User.self)
+            .filter("email == '\(email)' && password == '\(password)'")
+        return user.first
+    }
+    
     func loadUserByPrimaryKey(_ key: String) -> User? {
         return realm.object(ofType: User.self, forPrimaryKey: key)
     }

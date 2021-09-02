@@ -106,6 +106,7 @@
                         <outlet property="signInWithAppleButton" destination="MC8-7Y-dx6" id="zkA-1E-ub2"/>
                         <outlet property="signUpButton" destination="03P-5s-CWh" id="lJO-vb-CBS"/>
                         <segue destination="K0j-B8-PBL" kind="show" id="6xF-UJ-oWy"/>
+                        <segue destination="HOC-vp-j8J" kind="show" id="Pvf-cL-Ep2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWx-32-i9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +119,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="SignUpViewController" storyboardName="SignUp" id="K0j-B8-PBL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3G-7c-Mck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.6718749999999" y="126.5625"/>
+            <point key="canvasLocation" x="1017" y="7"/>
+        </scene>
+        <!--Split-->
+        <scene sceneID="6ex-vw-6cU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SplitViewController" storyboardName="Split" id="HOC-vp-j8J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1N-NO-Xxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4YU-Eh-kWK">

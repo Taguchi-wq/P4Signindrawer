@@ -48,7 +48,27 @@ class SignInViewController: UIViewController {
     
     
     @IBAction private func tappedSignInButton(_ sender: UIButton) {
-        print(#function)
+        let emailIsEmpty    = emailTextField.text?.isEmpty ?? false
+        let passwordIsEmpty = passwordTextField.text?.isEmpty ?? false
+        
+        if emailIsEmpty || passwordIsEmpty {
+            Alert.presentError(on: self, message: .noInput)
+            return
+        }
+        
+        let email    = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        guard let user = RealmManager.shared.loadUser(email: email, password: password) else {
+            Alert.presentError(on: self, message: .invalidInput)
+            return
+        }
+        
+        UserDefaults.standard.set(user.id, forKey: "userID")
+        
+        guard let splitVC = storyboard?.instantiateViewController(withIdentifier: SplitViewController.reuseIdentifier) as? SplitViewController else { return }
+        present(splitVC, animated: true)
+        
     }
     
     @IBAction private func tappedSignUpButton(_ sender: UIButton) {

@@ -15,4 +15,5 @@ public enum InputError: String, Error {
     case invalidPasssword   = "パスワードは大文字小文字英数字を含んだ6文字以上にしてください。"
     case notMatchPassword   = "パスワードと再入力パスワードが間違っています。\n入力し直してください。"
     case alreadyRegistered  = "このユーザーはすでに登録されています。\n入力し直してください。"
+    case invalidInput       = "メールアドレスまたはパスワードが間違っています。\n入力し直してください。"
 }

@@ -28,9 +28,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        signUpButtom.roundCorners(20)
+        signUpButtom.roundCorners(30)
         signInButton.addBorder()
-        signInButton.roundCorners(20)
+        signInButton.roundCorners(30)
         setupTextField(emailTextField)
         setupTextField(nameTextField)
         setupTextField(phoneTextField)
