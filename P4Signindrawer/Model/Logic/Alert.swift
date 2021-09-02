@@ -21,8 +21,8 @@ public enum Alert {
         DispatchQueue.main.async { viewController.present(alert, animated: true) }
     }
     
-    static func presentSignUp(on viewController: UIViewController) {
-        let alert = createBasicAlert(title: "サインアップに成功しました。", message: "", handler: nil)
+    static func presentSignUp(on viewController: UIViewController, handler: ((UIAlertAction) -> Void)?) {
+        let alert = createBasicAlert(title: "サインアップに成功しました。", message: "", handler: handler)
         DispatchQueue.main.async { viewController.present(alert, animated: true) }
     }
     

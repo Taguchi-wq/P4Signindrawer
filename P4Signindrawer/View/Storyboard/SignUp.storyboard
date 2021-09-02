@@ -155,6 +155,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xd0-EK-vy7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DRQ-Y2-2Dr"/>
                     <connections>
                         <outlet property="closeButton" destination="WZ2-RU-CXw" id="M4q-f7-jyJ"/>
                         <outlet property="emailTextField" destination="mMG-Qq-8TU" id="HSe-df-W4l"/>
@@ -164,11 +165,20 @@
                         <outlet property="repeatPasswordTextField" destination="YQo-3v-p0E" id="OkI-0e-Ngd"/>
                         <outlet property="signInButton" destination="Txv-rq-8hw" id="lfm-Cc-mfv"/>
                         <outlet property="signUpButtom" destination="4cU-xE-ZJf" id="Srh-3E-i7e"/>
+                        <segue destination="Uce-vY-liO" kind="show" id="PVT-6w-BNG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pC-xR-1ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-108" y="134"/>
+            <point key="canvasLocation" x="615.8203125" y="133.59375"/>
+        </scene>
+        <!--Split-->
+        <scene sceneID="Cxn-kl-JPJ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SplitViewController" storyboardName="Split" id="Uce-vY-liO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdi-it-nkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="134"/>
         </scene>
     </scenes>
     <resources>

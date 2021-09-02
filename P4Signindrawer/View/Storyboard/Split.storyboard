@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IGb-sN-0Eb">
-                                <rect key="frame" x="20" y="40" width="663.5" height="708"/>
+                                <rect key="frame" x="20" y="40" width="664" height="708"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vw8-Ja-be7">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="708"/>
@@ -32,19 +32,27 @@
                                                 <color key="textColor" red="0.0" green="0.52941176469999995" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:  20cm01**@jec.ac.jp  Name: 電子太郎  Phone: 03-****-****" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbv-cu-Ruc">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-Fh-pcI">
                                                 <rect key="frame" x="0.0" y="60" width="327" height="648"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5n-33-3VG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDF-He-ygg">
+                                                        <rect key="frame" x="0.0" y="56" width="327" height="592"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-N2-FaR">
-                                        <rect key="frame" x="337" y="0.0" width="326.5" height="708"/>
+                                        <rect key="frame" x="337" y="0.0" width="327" height="708"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホームページ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVp-XL-klk">
-                                                <rect key="frame" x="0.0" y="0.0" width="326.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="HjJ-ho-eNg"/>
                                                 </constraints>
@@ -53,7 +61,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-PY-keS">
-                                                <rect key="frame" x="0.0" y="60" width="326.5" height="648"/>
+                                                <rect key="frame" x="0.0" y="60" width="327" height="648"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <wkWebViewConfiguration key="configuration">
                                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -75,7 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="3Kl-yt-DCW"/>
                     </view>
                     <connections>
-                        <outlet property="detailLabel" destination="Bbv-cu-Ruc" id="kOW-xf-c0d"/>
+                        <outlet property="detailLabel" destination="y5n-33-3VG" id="7ga-P3-yYB"/>
                         <outlet property="pageTitleLabel" destination="Af9-a1-z5e" id="IZf-kv-bva"/>
                         <outlet property="webView" destination="rmd-PY-keS" id="KVu-tN-1wA"/>
                     </connections>
@@ -123,7 +131,7 @@
         <!--Split View Controller-->
         <scene sceneID="8SK-V7-P0M">
             <objects>
-                <splitViewController id="7iz-jj-GjR" customClass="SplitViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="SplitViewController" id="7iz-jj-GjR" customClass="SplitViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ckM-qp-uSf" kind="relationship" relationship="masterViewController" id="kCL-Px-LHH"/>
                         <segue destination="39M-hc-2o3" kind="relationship" relationship="detailViewController" id="4Dh-89-so0"/>

@@ -54,10 +54,10 @@ public enum Menu: CaseIterable {
         }
     }
     
-    var detail: String {
+    func detail(user: User) -> String {
         switch self {
         case .infomation:
-            return "E-mail:\n20cm0000@jec.ac.jp\n\nName:\n電子　太郎\n\nPhone:\n03-xxxx-yyyy"
+            return "E-mail:\n\(user.email)\n\nName:\n\(user.name)\n\nPhone:\n\(user.phoneNumber)"
         case .memo:
             return "早くコロナが収束するといいな"
         case .train:

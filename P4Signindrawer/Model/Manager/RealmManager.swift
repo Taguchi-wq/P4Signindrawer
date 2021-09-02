@@ -31,6 +31,10 @@ class RealmManager {
         return realm.objects(object)
     }
     
+    func loadUserByPrimaryKey(_ key: String) -> User? {
+        return realm.object(ofType: User.self, forPrimaryKey: key)
+    }
+    
     func savedUser(_ user: User) {
         write(user)
     }

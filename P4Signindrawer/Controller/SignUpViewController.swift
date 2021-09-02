@@ -62,7 +62,10 @@ class SignUpViewController: UIViewController {
         let user = User(email: email, name: name, phoneNumber: phoneNumber, password: password)
         if user.isNewUser {
             RealmManager.shared.savedUser(user)
-            Alert.presentSignUp(on: self)
+            UserDefaults.standard.set(user.id, forKey: "userID")
+            Alert.presentSignUp(on: self) { _ in
+                self.transitionSplitVC()
+            }
         } else {
             Alert.presentError(on: self, message: .alreadyRegistered)
         }
@@ -109,6 +112,11 @@ class SignUpViewController: UIViewController {
         }
         
         signUp(email: email, name: name, phoneNumber: phoneNumber, password: password)
+    }
+    
+    private func transitionSplitVC() {
+        guard let splitVC = storyboard?.instantiateViewController(withIdentifier: SplitViewController.reuseIdentifier) as? SplitViewController else { return }
+        present(splitVC, animated: true)
     }
     
     
