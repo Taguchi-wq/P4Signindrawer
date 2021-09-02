@@ -33,6 +33,8 @@
 		7F5A444326DF7AEF00BE7BD3 /* PhoneUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */; };
 		7F5A444626DF831B00BE7BD3 /* EmailUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */; };
 		7F5A444826DF893100BE7BD3 /* PasswordUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */; };
+		7F5A444C26E09D3A00BE7BD3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A444B26E09D3A00BE7BD3 /* Alert.swift */; };
+		7F5A445126E09DC700BE7BD3 /* InputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A445026E09DC700BE7BD3 /* InputError.swift */; };
 		7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97092026DA2EB1004F04B4 /* AppDelegate.swift */; };
 		7F97092826DA2EB2004F04B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F97092726DA2EB2004F04B4 /* Assets.xcassets */; };
 		7F97092B26DA2EB2004F04B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F97092926DA2EB2004F04B4 /* LaunchScreen.storyboard */; };
@@ -68,6 +70,8 @@
 		7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUtil.swift; sourceTree = "<group>"; };
 		7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtil.swift; sourceTree = "<group>"; };
 		7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUtil.swift; sourceTree = "<group>"; };
+		7F5A444B26E09D3A00BE7BD3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7F5A445026E09DC700BE7BD3 /* InputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputError.swift; sourceTree = "<group>"; };
 		7F97091D26DA2EB1004F04B4 /* P4Signindrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P4Signindrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F97092026DA2EB1004F04B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F97092726DA2EB2004F04B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		7F16F4AF26DB8B11000BF5AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F5A444D26E09DA300BE7BD3 /* Error */,
 				7F5A444426DF7AF400BE7BD3 /* Logic */,
 				7F5A443F26DE40A600BE7BD3 /* Entity */,
 				7F5A443E26DE409100BE7BD3 /* Manager */,
@@ -173,8 +178,17 @@
 				7F5A444226DF7AEF00BE7BD3 /* PhoneUtil.swift */,
 				7F5A444526DF831B00BE7BD3 /* EmailUtil.swift */,
 				7F5A444726DF893100BE7BD3 /* PasswordUtil.swift */,
+				7F5A444B26E09D3A00BE7BD3 /* Alert.swift */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		7F5A444D26E09DA300BE7BD3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A445026E09DC700BE7BD3 /* InputError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		7F97091426DA2EB1004F04B4 = {
@@ -382,6 +396,7 @@
 				7F10AE9826DD385C0031EEA6 /* UISplitViewController+Extension.swift in Sources */,
 				7F16F4B726DBE438000BF5AA /* InfomationViewController.swift in Sources */,
 				7F97092126DA2EB1004F04B4 /* AppDelegate.swift in Sources */,
+				7F5A444C26E09D3A00BE7BD3 /* Alert.swift in Sources */,
 				7F16F4B326DBC30C000BF5AA /* Minimize.swift in Sources */,
 				7F16F4A726DB7907000BF5AA /* MinimizeCell.swift in Sources */,
 				7F5A443C26DE3B0D00BE7BD3 /* RealmManager.swift in Sources */,
@@ -391,6 +406,7 @@
 				7F16F4B526DBD88C000BF5AA /* Logo.swift in Sources */,
 				7F16F4A326DB7884000BF5AA /* MenuCell.swift in Sources */,
 				7F10AE9E26DD39CA0031EEA6 /* UIButton+Extension.swift in Sources */,
+				7F5A445126E09DC700BE7BD3 /* InputError.swift in Sources */,
 				7F97093B26DA393F004F04B4 /* SplitViewController.swift in Sources */,
 				7F10AE9A26DD388C0031EEA6 /* UITextField+Extension.swift in Sources */,
 				7F5A444826DF893100BE7BD3 /* PasswordUtil.swift in Sources */,

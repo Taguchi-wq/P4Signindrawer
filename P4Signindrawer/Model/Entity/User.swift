@@ -34,7 +34,7 @@ class User: Object {
     
     var isNewUser: Bool {
         let user = RealmManager.shared.load(User.self)
-            .filter("email == '\(email)' && name == '\(name)' && phoneNumber == \(phoneNumber)")
+            .filter("email == '\(email)'")
         
         if user.isEmpty {
             return true

@@ -62,8 +62,9 @@ class SignUpViewController: UIViewController {
         let user = User(email: email, name: name, phoneNumber: phoneNumber, password: password)
         if user.isNewUser {
             RealmManager.shared.savedUser(user)
+            Alert.presentSignUp(on: self)
         } else {
-            print("このユーザーはすでに登録されています。")
+            Alert.presentError(on: self, message: .alreadyRegistered)
         }
     }
     
@@ -75,7 +76,7 @@ class SignUpViewController: UIViewController {
         let repeatPasswordIsEmpty    = repeatPasswordTextField.text?.isEmpty ?? false
         
         if emailIsEmpty || nameIsEmpty || phoneNumberStringIsEmpty || passwordIsEmpty || repeatPasswordIsEmpty {
-            print("入力されていないものがあります")
+            Alert.presentError(on: self, message: .noInput)
             return
         }
         
@@ -84,26 +85,26 @@ class SignUpViewController: UIViewController {
         
         // メールアドレス
         guard let email = emailUtil.parse(emailTextField.text!) else {
-            print("メールアドレスに間違いがある可能性があります")
+            Alert.presentError(on: self, message: .invalidEmail)
             return
         }
         
         // 電話番号
         guard let phoneNumber = phoneUtil.parse(phoneTextField.text!) else {
-            print("電話番号を-(ハイフン)なしの11桁で入力してください")
+            Alert.presentError(on: self, message: .invalidPhoneNumber)
             return
         }
         
         // パスワードと再入力パスワード
         guard let password = passwordUtil.parse(passwordTextField.text!),
             let repeatPassword = passwordUtil.parse(repeatPasswordTextField.text!) else {
-                print("パスワードは大文字小文字英数字を含んだ6文字以上にしてください.")
+                Alert.presentError(on: self, message: .invalidPasssword)
                 return
         }
         
         // パスワードと再入力パスワードが一致するか確認する
         if password != repeatPassword {
-            print("パスワードと再入力パスワードが間違っています。")
+            Alert.presentError(on: self, message: .notMatchPassword)
             return
         }
         

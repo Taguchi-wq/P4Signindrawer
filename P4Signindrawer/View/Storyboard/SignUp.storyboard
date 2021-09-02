@@ -44,7 +44,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hjq-fX-6zz">
                                                 <rect key="frame" x="0.0" y="70" width="400" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="田口寧乙" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hww-Wa-qjc">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="電子太郎" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hww-Wa-qjc">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="jKD-nC-CTV"/>
@@ -58,7 +58,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h7w-EL-Lhf">
                                                 <rect key="frame" x="0.0" y="140" width="400" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="08031381415" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-Sx-0iy">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00000000000" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-Sx-0iy">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="yU8-Of-wRk"/>
@@ -72,7 +72,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxU-ke-qT1">
                                                 <rect key="frame" x="0.0" y="210" width="400" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaa" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-aI-Ek6">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AaA2992" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-aI-Ek6">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="VKY-gO-5yb"/>
@@ -86,7 +86,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S1G-su-xWZ">
                                                 <rect key="frame" x="0.0" y="280" width="400" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaa" placeholder="Repeat Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQo-3v-p0E">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AaA2992" placeholder="Repeat Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQo-3v-p0E">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="zkz-Qb-D7o"/>
