@@ -108,7 +108,7 @@ class MenuViewController: UITableViewController {
         case .menu:
             changeDetailView(menu: Menu.allCases[indexPath.row])
         case .logout:
-            return
+            logout()
         case .minimize:
             minimizeMenu()
         }
@@ -152,6 +152,12 @@ extension MenuViewController {
         guard let infomationVC = storyboard?.instantiateViewController(withIdentifier: InfomationViewController.reuseIdentifier) as? InfomationViewController else { return }
         infomationVC.initialize(menu: menu)
         splitViewController.showDetailViewController(infomationVC, sender: nil)
+    }
+    
+    private func logout() {
+        Alert.presentLogOut(on: self) { _ in
+            self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+        }
     }
     
 }

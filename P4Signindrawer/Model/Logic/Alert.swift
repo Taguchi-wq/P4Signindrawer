@@ -26,4 +26,10 @@ public enum Alert {
         DispatchQueue.main.async { viewController.present(alert, animated: true) }
     }
     
+    static func presentLogOut(on viewController: UIViewController, handler: ((UIAlertAction) -> Void)?) {
+        let alert = createBasicAlert(title: "ログアウトしますか？", message: "", handler: handler)
+        alert.addAction(UIAlertAction(title: "キャンセル", style: .cancel))
+        DispatchQueue.main.async { viewController.present(alert, animated: true) }
+    }
+    
 }
