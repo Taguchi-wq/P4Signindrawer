@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7iz-jj-GjR">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Infomation View Controller-->
+        <scene sceneID="vgz-5o-Vwp">
+            <objects>
+                <viewController storyboardIdentifier="InfomationViewController" id="39M-hc-2o3" customClass="InfomationViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9N8-mf-bAe">
+                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IGb-sN-0Eb">
+                                <rect key="frame" x="20" y="40" width="664" height="708"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vw8-Ja-be7">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="708"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登録情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-a1-z5e">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="G40-Zg-hmc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.52941176469999995" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-Fh-pcI">
+                                                <rect key="frame" x="0.0" y="60" width="327" height="648"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5n-33-3VG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDF-He-ygg">
+                                                        <rect key="frame" x="0.0" y="56" width="327" height="592"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-N2-FaR">
+                                        <rect key="frame" x="337" y="0.0" width="327" height="708"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホームページ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVp-XL-klk">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HjJ-ho-eNg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.52941176469999995" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-PY-keS">
+                                                <rect key="frame" x="0.0" y="60" width="327" height="648"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Kl-yt-DCW" firstAttribute="bottom" secondItem="IGb-sN-0Eb" secondAttribute="bottom" constant="20" id="3q8-ns-VK8"/>
+                            <constraint firstItem="IGb-sN-0Eb" firstAttribute="top" secondItem="3Kl-yt-DCW" secondAttribute="top" constant="20" id="4j8-59-G6A"/>
+                            <constraint firstItem="IGb-sN-0Eb" firstAttribute="leading" secondItem="3Kl-yt-DCW" secondAttribute="leading" constant="20" id="d6L-Yb-Bce"/>
+                            <constraint firstItem="3Kl-yt-DCW" firstAttribute="trailing" secondItem="IGb-sN-0Eb" secondAttribute="trailing" constant="20" id="gvp-Y1-mtX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Kl-yt-DCW"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="y5n-33-3VG" id="7ga-P3-yYB"/>
+                        <outlet property="pageTitleLabel" destination="Af9-a1-z5e" id="IZf-kv-bva"/>
+                        <outlet property="webView" destination="rmd-PY-keS" id="KVu-tN-1wA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1O-6i-oe6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.5859375" y="172.65625"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="cM6-Q9-0rI">
+            <objects>
+                <tableViewController storyboardIdentifier="MenuViewController" clearsSelectionOnViewWillAppear="NO" id="1IS-st-Myi" customClass="MenuViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gee-jZ-UuK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="1IS-st-Myi" id="byR-rg-6cx"/>
+                            <outlet property="delegate" destination="1IS-st-Myi" id="y3z-ea-EN3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="cSB-Jf-IL5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIg-tz-It7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.4921875" y="-484.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y1f-yy-DA0">
+            <objects>
+                <navigationController id="ckM-qp-uSf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VdC-zJ-GMC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1IS-st-Myi" kind="relationship" relationship="rootViewController" id="fAa-JO-bke"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5M-Sg-noC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="-484"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="8SK-V7-P0M">
+            <objects>
+                <splitViewController storyboardIdentifier="SplitViewController" id="7iz-jj-GjR" customClass="SplitViewController" customModule="P4Signindrawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ckM-qp-uSf" kind="relationship" relationship="masterViewController" id="kCL-Px-LHH"/>
+                        <segue destination="39M-hc-2o3" kind="relationship" relationship="detailViewController" id="4Dh-89-so0"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e69-8c-Z2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="-156"/>
+        </scene>
+    </scenes>
+</document>
